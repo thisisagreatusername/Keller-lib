@@ -1,0 +1,1150 @@
+
+GccApplication2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000004  00800200  000005fa  0000068e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000005fa  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000015  00800204  00800204  00000692  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000692  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000006c4  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000190  00000000  00000000  00000704  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000d76  00000000  00000000  00000894  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000005e7  00000000  00000000  0000160a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000aec  00000000  00000000  00001bf1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000002b0  00000000  00000000  000026e0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000425  00000000  00000000  00002990  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000554  00000000  00000000  00002db5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000130  00000000  00000000  00003309  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	8e c0       	rjmp	.+284    	; 0x122 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	8c c0       	rjmp	.+280    	; 0x122 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	8a c0       	rjmp	.+276    	; 0x122 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	88 c0       	rjmp	.+272    	; 0x122 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	86 c0       	rjmp	.+268    	; 0x122 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	84 c0       	rjmp	.+264    	; 0x122 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	82 c0       	rjmp	.+260    	; 0x122 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	80 c0       	rjmp	.+256    	; 0x122 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	7e c0       	rjmp	.+252    	; 0x122 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	7c c0       	rjmp	.+248    	; 0x122 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	7a c0       	rjmp	.+244    	; 0x122 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	78 c0       	rjmp	.+240    	; 0x122 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	76 c0       	rjmp	.+236    	; 0x122 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	74 c0       	rjmp	.+232    	; 0x122 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	72 c0       	rjmp	.+228    	; 0x122 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	70 c0       	rjmp	.+224    	; 0x122 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	6e c0       	rjmp	.+220    	; 0x122 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	6c c0       	rjmp	.+216    	; 0x122 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	6a c0       	rjmp	.+212    	; 0x122 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	68 c0       	rjmp	.+208    	; 0x122 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	66 c0       	rjmp	.+204    	; 0x122 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	64 c0       	rjmp	.+200    	; 0x122 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	62 c0       	rjmp	.+196    	; 0x122 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	60 c0       	rjmp	.+192    	; 0x122 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	5e c0       	rjmp	.+188    	; 0x122 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	5c c0       	rjmp	.+184    	; 0x122 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	5a c0       	rjmp	.+180    	; 0x122 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	58 c0       	rjmp	.+176    	; 0x122 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	56 c0       	rjmp	.+172    	; 0x122 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	54 c0       	rjmp	.+168    	; 0x122 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	52 c0       	rjmp	.+164    	; 0x122 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	50 c0       	rjmp	.+160    	; 0x122 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	4e c0       	rjmp	.+156    	; 0x122 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	4c c0       	rjmp	.+152    	; 0x122 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	4a c0       	rjmp	.+148    	; 0x122 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	48 c0       	rjmp	.+144    	; 0x122 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	46 c0       	rjmp	.+140    	; 0x122 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	44 c0       	rjmp	.+136    	; 0x122 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	42 c0       	rjmp	.+132    	; 0x122 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	40 c0       	rjmp	.+128    	; 0x122 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	3e c0       	rjmp	.+124    	; 0x122 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	3c c0       	rjmp	.+120    	; 0x122 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	3a c0       	rjmp	.+116    	; 0x122 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	38 c0       	rjmp	.+112    	; 0x122 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	36 c0       	rjmp	.+108    	; 0x122 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	34 c0       	rjmp	.+104    	; 0x122 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	32 c0       	rjmp	.+100    	; 0x122 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	30 c0       	rjmp	.+96     	; 0x122 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	2e c0       	rjmp	.+92     	; 0x122 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	2c c0       	rjmp	.+88     	; 0x122 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	2a c0       	rjmp	.+84     	; 0x122 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	28 c0       	rjmp	.+80     	; 0x122 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	26 c0       	rjmp	.+76     	; 0x122 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	24 c0       	rjmp	.+72     	; 0x122 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	22 c0       	rjmp	.+68     	; 0x122 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	20 c0       	rjmp	.+64     	; 0x122 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	ea ef       	ldi	r30, 0xFA	; 250
+  fc:	f5 e0       	ldi	r31, 0x05	; 5
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a4 30       	cpi	r26, 0x04	; 4
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	22 e0       	ldi	r18, 0x02	; 2
+ 110:	a4 e0       	ldi	r26, 0x04	; 4
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	a9 31       	cpi	r26, 0x19	; 25
+ 11a:	b2 07       	cpc	r27, r18
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	09 d2       	rcall	.+1042   	; 0x532 <main>
+ 120:	6a c2       	rjmp	.+1236   	; 0x5f6 <_exit>
+
+00000122 <__bad_interrupt>:
+ 122:	6e cf       	rjmp	.-292    	; 0x0 <__vectors>
+
+00000124 <Blue_Init>:
+ 124:	80 91 04 02 	lds	r24, 0x0204
+ 128:	81 11       	cpse	r24, r1
+ 12a:	0f c0       	rjmp	.+30     	; 0x14a <Blue_Init+0x26>
+ 12c:	86 e0       	ldi	r24, 0x06	; 6
+ 12e:	80 93 c2 00 	sts	0x00C2, r24
+ 132:	83 e3       	ldi	r24, 0x33	; 51
+ 134:	90 e0       	ldi	r25, 0x00	; 0
+ 136:	90 93 c5 00 	sts	0x00C5, r25
+ 13a:	80 93 c4 00 	sts	0x00C4, r24
+ 13e:	88 e1       	ldi	r24, 0x18	; 24
+ 140:	80 93 c1 00 	sts	0x00C1, r24
+ 144:	81 e0       	ldi	r24, 0x01	; 1
+ 146:	80 93 04 02 	sts	0x0204, r24
+ 14a:	08 95       	ret
+
+0000014c <Blue_Get>:
+ 14c:	fc 01       	movw	r30, r24
+ 14e:	90 91 04 02 	lds	r25, 0x0204
+ 152:	99 23       	and	r25, r25
+ 154:	49 f0       	breq	.+18     	; 0x168 <Blue_Get+0x1c>
+ 156:	90 91 c0 00 	lds	r25, 0x00C0
+ 15a:	99 23       	and	r25, r25
+ 15c:	3c f4       	brge	.+14     	; 0x16c <Blue_Get+0x20>
+ 15e:	80 91 c6 00 	lds	r24, 0x00C6
+ 162:	80 83       	st	Z, r24
+ 164:	80 e0       	ldi	r24, 0x00	; 0
+ 166:	08 95       	ret
+ 168:	81 e0       	ldi	r24, 0x01	; 1
+ 16a:	08 95       	ret
+ 16c:	83 e0       	ldi	r24, 0x03	; 3
+ 16e:	08 95       	ret
+
+00000170 <Blue_Send>:
+ 170:	90 91 04 02 	lds	r25, 0x0204
+ 174:	99 23       	and	r25, r25
+ 176:	49 f0       	breq	.+18     	; 0x18a <Blue_Send+0x1a>
+ 178:	e0 ec       	ldi	r30, 0xC0	; 192
+ 17a:	f0 e0       	ldi	r31, 0x00	; 0
+ 17c:	90 81       	ld	r25, Z
+ 17e:	95 ff       	sbrs	r25, 5
+ 180:	fd cf       	rjmp	.-6      	; 0x17c <Blue_Send+0xc>
+ 182:	80 93 c6 00 	sts	0x00C6, r24
+ 186:	80 e0       	ldi	r24, 0x00	; 0
+ 188:	08 95       	ret
+ 18a:	81 e0       	ldi	r24, 0x01	; 1
+ 18c:	08 95       	ret
+
+0000018e <to6Bit>:
+		return b;
+	}
+}
+int8_t to6Bit(int8_t d)
+{
+	if(d < 0)
+ 18e:	88 23       	and	r24, r24
+ 190:	5c f4       	brge	.+22     	; 0x1a8 <to6Bit+0x1a>
+	{
+		//keep sign
+		d = abs(d);
+ 192:	08 2e       	mov	r0, r24
+ 194:	00 0c       	add	r0, r0
+ 196:	99 0b       	sbc	r25, r25
+ 198:	99 23       	and	r25, r25
+ 19a:	1c f4       	brge	.+6      	; 0x1a2 <to6Bit+0x14>
+ 19c:	91 95       	neg	r25
+ 19e:	81 95       	neg	r24
+ 1a0:	91 09       	sbc	r25, r1
+		return (d |MSGMASK_SIGN) & MSGMASK_DATA;
+ 1a2:	8f 71       	andi	r24, 0x1F	; 31
+ 1a4:	80 62       	ori	r24, 0x20	; 32
+ 1a6:	08 95       	ret
+	}
+	else
+	{
+		return d & MSGMASK_UNDATA;
+ 1a8:	8f 71       	andi	r24, 0x1F	; 31
+	}
+ 1aa:	08 95       	ret
+
+000001ac <Car_SetDefaultValues>:
+BOOL lastBoost = FALSE;
+int8_t boostFactor = 1;
+
+void Car_SetDefaultValues()
+{
+	lastSpeed = 0;
+ 1ac:	10 92 0a 02 	sts	0x020A, r1
+	lastSteer = 0;
+ 1b0:	10 92 09 02 	sts	0x0209, r1
+	lastPanicButton = FALSE;
+ 1b4:	10 92 08 02 	sts	0x0208, r1
+	lastBoost = FALSE;
+ 1b8:	10 92 07 02 	sts	0x0207, r1
+	chFlags = FLAG_SPEED | FLAG_DIR;
+ 1bc:	83 e0       	ldi	r24, 0x03	; 3
+ 1be:	80 93 0b 02 	sts	0x020B, r24
+	boostFactor = 1;
+ 1c2:	81 e0       	ldi	r24, 0x01	; 1
+ 1c4:	80 93 00 02 	sts	0x0200, r24
+ 1c8:	08 95       	ret
+
+000001ca <Ctrl_init>:
+}
+
+void Ctrl_init()
+{
+	Blue_Init();
+ 1ca:	ac cf       	rjmp	.-168    	; 0x124 <Blue_Init>
+ 1cc:	08 95       	ret
+
+000001ce <Ctrl_GetBoostFactor>:
+}
+
+int8_t Ctrl_GetBoostFactor()
+{
+	return boostFactor;
+}
+ 1ce:	80 91 00 02 	lds	r24, 0x0200
+ 1d2:	08 95       	ret
+
+000001d4 <Ctrl_connect>:
+
+BOOL Ctrl_connect()
+{
+ 1d4:	0f 93       	push	r16
+ 1d6:	1f 93       	push	r17
+ 1d8:	cf 93       	push	r28
+ 1da:	df 93       	push	r29
+ 1dc:	1f 92       	push	r1
+ 1de:	cd b7       	in	r28, 0x3d	; 61
+ 1e0:	de b7       	in	r29, 0x3e	; 62
+	static uint16_t timer = 0;
+	
+	uint8_t msg;
+	RESULT res;
+	if(CTRL_CONNECTED)
+ 1e2:	10 91 0c 02 	lds	r17, 0x020C
+ 1e6:	11 23       	and	r17, r17
+ 1e8:	39 f0       	breq	.+14     	; 0x1f8 <Ctrl_connect+0x24>
+	{
+		res = Blue_Send(MSGJOY_INIT);
+ 1ea:	82 ec       	ldi	r24, 0xC2	; 194
+ 1ec:	c1 df       	rcall	.-126    	; 0x170 <Blue_Send>
+		return SUCCEDED(res);
+ 1ee:	11 e0       	ldi	r17, 0x01	; 1
+ 1f0:	88 23       	and	r24, r24
+ 1f2:	49 f1       	breq	.+82     	; 0x246 <Ctrl_connect+0x72>
+ 1f4:	10 e0       	ldi	r17, 0x00	; 0
+ 1f6:	27 c0       	rjmp	.+78     	; 0x246 <Ctrl_connect+0x72>
+	}
+		
+	res = Blue_Get(&msg);
+ 1f8:	ce 01       	movw	r24, r28
+ 1fa:	01 96       	adiw	r24, 0x01	; 1
+ 1fc:	a7 df       	rcall	.-178    	; 0x14c <Blue_Get>
+	
+	if(SUCCEDED(res))
+ 1fe:	81 11       	cpse	r24, r1
+ 200:	15 c0       	rjmp	.+42     	; 0x22c <Ctrl_connect+0x58>
+	{
+		if(msg == MSGJOY_INIT)
+ 202:	89 81       	ldd	r24, Y+1	; 0x01
+ 204:	82 3c       	cpi	r24, 0xC2	; 194
+ 206:	f9 f4       	brne	.+62     	; 0x246 <Ctrl_connect+0x72>
+		{
+			CTRL_CONNECTED = TRUE;
+ 208:	81 e0       	ldi	r24, 0x01	; 1
+ 20a:	80 93 0c 02 	sts	0x020C, r24
+			Blue_Send(msg);
+ 20e:	82 ec       	ldi	r24, 0xC2	; 194
+ 210:	af df       	rcall	.-162    	; 0x170 <Blue_Send>
+			Blue_Send(msg);
+ 212:	89 81       	ldd	r24, Y+1	; 0x01
+ 214:	ad df       	rcall	.-166    	; 0x170 <Blue_Send>
+			Blue_Send(msg);
+ 216:	89 81       	ldd	r24, Y+1	; 0x01
+ 218:	ab df       	rcall	.-170    	; 0x170 <Blue_Send>
+			res = Blue_Send(msg);
+ 21a:	89 81       	ldd	r24, Y+1	; 0x01
+ 21c:	a9 df       	rcall	.-174    	; 0x170 <Blue_Send>
+ 21e:	08 2f       	mov	r16, r24
+			
+			Car_SetDefaultValues();
+ 220:	c5 df       	rcall	.-118    	; 0x1ac <Car_SetDefaultValues>
+			return SUCCEDED(res);
+ 222:	11 e0       	ldi	r17, 0x01	; 1
+ 224:	00 23       	and	r16, r16
+ 226:	79 f0       	breq	.+30     	; 0x246 <Ctrl_connect+0x72>
+ 228:	10 e0       	ldi	r17, 0x00	; 0
+ 22a:	0d c0       	rjmp	.+26     	; 0x246 <Ctrl_connect+0x72>
+		}
+	}
+	else
+	{
+		// this will fix the disconnection bug with the pc
+		timer++;
+ 22c:	80 91 05 02 	lds	r24, 0x0205
+ 230:	90 91 06 02 	lds	r25, 0x0206
+ 234:	01 96       	adiw	r24, 0x01	; 1
+ 236:	90 93 06 02 	sts	0x0206, r25
+ 23a:	80 93 05 02 	sts	0x0205, r24
+		if(timer == 0)
+ 23e:	89 2b       	or	r24, r25
+ 240:	11 f4       	brne	.+4      	; 0x246 <Ctrl_connect+0x72>
+			Blue_Send(MSGSTOP);	
+ 242:	8f ef       	ldi	r24, 0xFF	; 255
+ 244:	95 df       	rcall	.-214    	; 0x170 <Blue_Send>
+	}
+	
+	
+	return FALSE;
+}
+ 246:	81 2f       	mov	r24, r17
+ 248:	0f 90       	pop	r0
+ 24a:	df 91       	pop	r29
+ 24c:	cf 91       	pop	r28
+ 24e:	1f 91       	pop	r17
+ 250:	0f 91       	pop	r16
+ 252:	08 95       	ret
+
+00000254 <Ctrl_isConnected>:
+
+BOOL Ctrl_isConnected()
+{
+	return CTRL_CONNECTED;
+}
+ 254:	80 91 0c 02 	lds	r24, 0x020C
+ 258:	08 95       	ret
+
+0000025a <Ctrl_Update>:
+
+RESULT Ctrl_Update()
+{
+ 25a:	cf 93       	push	r28
+ 25c:	df 93       	push	r29
+ 25e:	1f 92       	push	r1
+ 260:	cd b7       	in	r28, 0x3d	; 61
+ 262:	de b7       	in	r29, 0x3e	; 62
+	uint8_t msg;
+	RESULT res;
+	if(SUCCEDED(Blue_Get(&msg)))
+ 264:	ce 01       	movw	r24, r28
+ 266:	01 96       	adiw	r24, 0x01	; 1
+ 268:	71 df       	rcall	.-286    	; 0x14c <Blue_Get>
+ 26a:	81 11       	cpse	r24, r1
+ 26c:	05 c0       	rjmp	.+10     	; 0x278 <Ctrl_Update+0x1e>
+	{
+		switch(msg)
+ 26e:	89 81       	ldd	r24, Y+1	; 0x01
+ 270:	81 3c       	cpi	r24, 0xC1	; 193
+ 272:	11 f4       	brne	.+4      	; 0x278 <Ctrl_Update+0x1e>
+		{
+			case MSGDISCONNECT:
+				CTRL_CONNECTED = FALSE;
+ 274:	10 92 0c 02 	sts	0x020C, r1
+				break;
+		}
+	}
+		
+	if(chFlags & FLAG_STOP)
+ 278:	80 91 0b 02 	lds	r24, 0x020B
+ 27c:	82 ff       	sbrs	r24, 2
+ 27e:	0c c0       	rjmp	.+24     	; 0x298 <Ctrl_Update+0x3e>
+	{
+		res = Blue_Send(MSGSTOP);
+ 280:	8f ef       	ldi	r24, 0xFF	; 255
+ 282:	76 df       	rcall	.-276    	; 0x170 <Blue_Send>
+		if(SUCCEDED(res))
+ 284:	81 11       	cpse	r24, r1
+ 286:	2d c0       	rjmp	.+90     	; 0x2e2 <Ctrl_Update+0x88>
+		{
+			chFlags &= ~FLAG_STOP;
+ 288:	90 91 0b 02 	lds	r25, 0x020B
+ 28c:	9b 7f       	andi	r25, 0xFB	; 251
+ 28e:	90 93 0b 02 	sts	0x020B, r25
+			CTRL_CONNECTED = FALSE;
+ 292:	10 92 0c 02 	sts	0x020C, r1
+			return R_OK;
+ 296:	25 c0       	rjmp	.+74     	; 0x2e2 <Ctrl_Update+0x88>
+		{
+			return res;
+		}
+	}
+	
+	if(chFlags & FLAG_SPEED)
+ 298:	80 ff       	sbrs	r24, 0
+ 29a:	11 c0       	rjmp	.+34     	; 0x2be <Ctrl_Update+0x64>
+	{
+		res = Blue_Send(MSGSPEED | to6Bit(lastSpeed * boostFactor));
+ 29c:	90 91 00 02 	lds	r25, 0x0200
+ 2a0:	80 91 0a 02 	lds	r24, 0x020A
+ 2a4:	98 9f       	mul	r25, r24
+ 2a6:	80 2d       	mov	r24, r0
+ 2a8:	11 24       	eor	r1, r1
+ 2aa:	71 df       	rcall	.-286    	; 0x18e <to6Bit>
+ 2ac:	80 64       	ori	r24, 0x40	; 64
+ 2ae:	60 df       	rcall	.-320    	; 0x170 <Blue_Send>
+		if(SUCCEDED(res))
+ 2b0:	81 11       	cpse	r24, r1
+ 2b2:	17 c0       	rjmp	.+46     	; 0x2e2 <Ctrl_Update+0x88>
+		{
+			chFlags &= ~FLAG_SPEED;
+ 2b4:	80 91 0b 02 	lds	r24, 0x020B
+ 2b8:	8e 7f       	andi	r24, 0xFE	; 254
+ 2ba:	80 93 0b 02 	sts	0x020B, r24
+		{
+			return res;
+		}
+	}
+	
+	if(chFlags & FLAG_DIR)
+ 2be:	90 91 0b 02 	lds	r25, 0x020B
+ 2c2:	89 2f       	mov	r24, r25
+ 2c4:	82 70       	andi	r24, 0x02	; 2
+ 2c6:	91 ff       	sbrs	r25, 1
+ 2c8:	0c c0       	rjmp	.+24     	; 0x2e2 <Ctrl_Update+0x88>
+	{
+		res = Blue_Send(MSGSTEER | to6Bit(lastSteer));
+ 2ca:	80 91 09 02 	lds	r24, 0x0209
+ 2ce:	5f df       	rcall	.-322    	; 0x18e <to6Bit>
+ 2d0:	80 68       	ori	r24, 0x80	; 128
+ 2d2:	4e df       	rcall	.-356    	; 0x170 <Blue_Send>
+		if(SUCCEDED(res))
+ 2d4:	81 11       	cpse	r24, r1
+ 2d6:	05 c0       	rjmp	.+10     	; 0x2e2 <Ctrl_Update+0x88>
+		{
+			chFlags &= ~FLAG_DIR;
+ 2d8:	90 91 0b 02 	lds	r25, 0x020B
+ 2dc:	9d 7f       	andi	r25, 0xFD	; 253
+ 2de:	90 93 0b 02 	sts	0x020B, r25
+			return res;
+		}
+	}
+	
+	return R_OK;
+}
+ 2e2:	0f 90       	pop	r0
+ 2e4:	df 91       	pop	r29
+ 2e6:	cf 91       	pop	r28
+ 2e8:	08 95       	ret
+
+000002ea <Ctrl_UpdateData>:
+
+void Ctrl_UpdateData(int8_t speed, int8_t steer, BOOL panicButton, BOOL speedButton)
+{
+	if(lastSteer != steer)
+ 2ea:	90 91 09 02 	lds	r25, 0x0209
+ 2ee:	96 17       	cp	r25, r22
+ 2f0:	39 f0       	breq	.+14     	; 0x300 <Ctrl_UpdateData+0x16>
+	{
+		lastSteer = steer;
+ 2f2:	60 93 09 02 	sts	0x0209, r22
+		chFlags |= FLAG_DIR;
+ 2f6:	90 91 0b 02 	lds	r25, 0x020B
+ 2fa:	92 60       	ori	r25, 0x02	; 2
+ 2fc:	90 93 0b 02 	sts	0x020B, r25
+	}
+	
+	if(lastSpeed != speed)
+ 300:	90 91 0a 02 	lds	r25, 0x020A
+ 304:	98 17       	cp	r25, r24
+ 306:	39 f0       	breq	.+14     	; 0x316 <Ctrl_UpdateData+0x2c>
+	{
+		lastSpeed = speed;
+ 308:	80 93 0a 02 	sts	0x020A, r24
+		chFlags |= FLAG_SPEED;
+ 30c:	80 91 0b 02 	lds	r24, 0x020B
+ 310:	81 60       	ori	r24, 0x01	; 1
+ 312:	80 93 0b 02 	sts	0x020B, r24
+	}
+	
+	if(lastPanicButton != panicButton)
+ 316:	80 91 08 02 	lds	r24, 0x0208
+ 31a:	84 17       	cp	r24, r20
+ 31c:	39 f0       	breq	.+14     	; 0x32c <Ctrl_UpdateData+0x42>
+	{
+		lastPanicButton = panicButton;
+ 31e:	40 93 08 02 	sts	0x0208, r20
+		chFlags |= FLAG_STOP;
+ 322:	80 91 0b 02 	lds	r24, 0x020B
+ 326:	84 60       	ori	r24, 0x04	; 4
+ 328:	80 93 0b 02 	sts	0x020B, r24
+	}
+	
+	if(lastBoost != speedButton)
+ 32c:	80 91 07 02 	lds	r24, 0x0207
+ 330:	82 17       	cp	r24, r18
+ 332:	a1 f0       	breq	.+40     	; 0x35c <Ctrl_UpdateData+0x72>
+	{
+		lastBoost = speedButton;
+ 334:	20 93 07 02 	sts	0x0207, r18
+		if(lastBoost == 1)
+ 338:	21 30       	cpi	r18, 0x01	; 1
+ 33a:	81 f4       	brne	.+32     	; 0x35c <Ctrl_UpdateData+0x72>
+		{
+			// toogle booosto
+			if (boostFactor == 1)
+ 33c:	80 91 00 02 	lds	r24, 0x0200
+ 340:	81 30       	cpi	r24, 0x01	; 1
+ 342:	21 f4       	brne	.+8      	; 0x34c <Ctrl_UpdateData+0x62>
+				boostFactor = 2;
+ 344:	82 e0       	ldi	r24, 0x02	; 2
+ 346:	80 93 00 02 	sts	0x0200, r24
+ 34a:	03 c0       	rjmp	.+6      	; 0x352 <Ctrl_UpdateData+0x68>
+			else
+				boostFactor = 1;
+ 34c:	81 e0       	ldi	r24, 0x01	; 1
+ 34e:	80 93 00 02 	sts	0x0200, r24
+			
+			chFlags |= FLAG_SPEED;
+ 352:	80 91 0b 02 	lds	r24, 0x020B
+ 356:	81 60       	ori	r24, 0x01	; 1
+ 358:	80 93 0b 02 	sts	0x020B, r24
+ 35c:	08 95       	ret
+
+0000035e <Joystick_init>:
+
+RESULT Joystick_setled(uint8_t Led)
+{
+	LedDat = Led;
+	return R_OK;
+}
+ 35e:	80 91 0d 02 	lds	r24, 0x020D
+ 362:	81 11       	cpse	r24, r1
+ 364:	08 c0       	rjmp	.+16     	; 0x376 <Joystick_init+0x18>
+ 366:	87 ef       	ldi	r24, 0xF7	; 247
+ 368:	84 b9       	out	0x04, r24	; 4
+ 36a:	28 9a       	sbi	0x05, 0	; 5
+ 36c:	83 e5       	ldi	r24, 0x53	; 83
+ 36e:	8c bd       	out	0x2c, r24	; 44
+ 370:	81 e0       	ldi	r24, 0x01	; 1
+ 372:	80 93 0d 02 	sts	0x020D, r24
+ 376:	80 e0       	ldi	r24, 0x00	; 0
+ 378:	08 95       	ret
+
+0000037a <Joystick_step>:
+ 37a:	80 91 02 02 	lds	r24, 0x0202
+ 37e:	85 30       	cpi	r24, 0x05	; 5
+ 380:	b9 f0       	breq	.+46     	; 0x3b0 <Joystick_step+0x36>
+ 382:	18 f0       	brcs	.+6      	; 0x38a <Joystick_step+0x10>
+ 384:	86 30       	cpi	r24, 0x06	; 6
+ 386:	89 f1       	breq	.+98     	; 0x3ea <Joystick_step+0x70>
+ 388:	39 c0       	rjmp	.+114    	; 0x3fc <Joystick_step+0x82>
+ 38a:	0d b4       	in	r0, 0x2d	; 45
+ 38c:	07 fe       	sbrs	r0, 7
+ 38e:	38 c0       	rjmp	.+112    	; 0x400 <Joystick_step+0x86>
+ 390:	9e b5       	in	r25, 0x2e	; 46
+ 392:	e8 2f       	mov	r30, r24
+ 394:	f0 e0       	ldi	r31, 0x00	; 0
+ 396:	ec 5e       	subi	r30, 0xEC	; 236
+ 398:	fd 4f       	sbci	r31, 0xFD	; 253
+ 39a:	90 83       	st	Z, r25
+ 39c:	84 30       	cpi	r24, 0x04	; 4
+ 39e:	08 f4       	brcc	.+2      	; 0x3a2 <Joystick_step+0x28>
+ 3a0:	1e bc       	out	0x2e, r1	; 46
+ 3a2:	80 91 02 02 	lds	r24, 0x0202
+ 3a6:	8f 5f       	subi	r24, 0xFF	; 255
+ 3a8:	80 93 02 02 	sts	0x0202, r24
+ 3ac:	83 e0       	ldi	r24, 0x03	; 3
+ 3ae:	08 95       	ret
+ 3b0:	28 9a       	sbi	0x05, 0	; 5
+ 3b2:	80 91 02 02 	lds	r24, 0x0202
+ 3b6:	8f 5f       	subi	r24, 0xFF	; 255
+ 3b8:	80 93 02 02 	sts	0x0202, r24
+ 3bc:	ef e0       	ldi	r30, 0x0F	; 15
+ 3be:	f2 e0       	ldi	r31, 0x02	; 2
+ 3c0:	a4 e1       	ldi	r26, 0x14	; 20
+ 3c2:	b2 e0       	ldi	r27, 0x02	; 2
+ 3c4:	8c 91       	ld	r24, X
+ 3c6:	80 83       	st	Z, r24
+ 3c8:	11 96       	adiw	r26, 0x01	; 1
+ 3ca:	8c 91       	ld	r24, X
+ 3cc:	11 97       	sbiw	r26, 0x01	; 1
+ 3ce:	81 83       	std	Z+1, r24	; 0x01
+ 3d0:	12 96       	adiw	r26, 0x02	; 2
+ 3d2:	8c 91       	ld	r24, X
+ 3d4:	12 97       	sbiw	r26, 0x02	; 2
+ 3d6:	82 83       	std	Z+2, r24	; 0x02
+ 3d8:	13 96       	adiw	r26, 0x03	; 3
+ 3da:	8c 91       	ld	r24, X
+ 3dc:	13 97       	sbiw	r26, 0x03	; 3
+ 3de:	83 83       	std	Z+3, r24	; 0x03
+ 3e0:	14 96       	adiw	r26, 0x04	; 4
+ 3e2:	8c 91       	ld	r24, X
+ 3e4:	84 83       	std	Z+4, r24	; 0x04
+ 3e6:	80 e0       	ldi	r24, 0x00	; 0
+ 3e8:	08 95       	ret
+ 3ea:	28 98       	cbi	0x05, 0	; 5
+ 3ec:	80 91 01 02 	lds	r24, 0x0201
+ 3f0:	83 70       	andi	r24, 0x03	; 3
+ 3f2:	8e bd       	out	0x2e, r24	; 46
+ 3f4:	10 92 02 02 	sts	0x0202, r1
+ 3f8:	83 e0       	ldi	r24, 0x03	; 3
+ 3fa:	08 95       	ret
+ 3fc:	83 e0       	ldi	r24, 0x03	; 3
+ 3fe:	08 95       	ret
+ 400:	83 e0       	ldi	r24, 0x03	; 3
+ 402:	08 95       	ret
+
+00000404 <Joystick_get_b1>:
+ 404:	80 91 18 02 	lds	r24, 0x0218
+ 408:	86 95       	lsr	r24
+ 40a:	81 70       	andi	r24, 0x01	; 1
+ 40c:	08 95       	ret
+
+0000040e <Joystick_get_b2>:
+ 40e:	80 91 18 02 	lds	r24, 0x0218
+ 412:	82 fb       	bst	r24, 2
+ 414:	88 27       	eor	r24, r24
+ 416:	80 f9       	bld	r24, 0
+ 418:	08 95       	ret
+
+0000041a <Joystick_get_x>:
+
+
+int8_t Joystick_get_x()
+{
+	
+	int16_t x = (datacopy[1] << 8) + datacopy[0];
+ 41a:	ef e0       	ldi	r30, 0x0F	; 15
+ 41c:	f2 e0       	ldi	r31, 0x02	; 2
+ 41e:	81 81       	ldd	r24, Z+1	; 0x01
+ 420:	90 e0       	ldi	r25, 0x00	; 0
+ 422:	98 2f       	mov	r25, r24
+ 424:	88 27       	eor	r24, r24
+ 426:	20 81       	ld	r18, Z
+ 428:	82 0f       	add	r24, r18
+ 42a:	91 1d       	adc	r25, r1
+	x -= 512;
+ 42c:	92 50       	subi	r25, 0x02	; 2
+	x /= 30;
+ 42e:	6e e1       	ldi	r22, 0x1E	; 30
+ 430:	70 e0       	ldi	r23, 0x00	; 0
+ 432:	ba d0       	rcall	.+372    	; 0x5a8 <__divmodhi4>
+ 434:	86 2f       	mov	r24, r22
+ 436:	97 2f       	mov	r25, r23
+	int8_t xmapped = 0;
+	if (x <= -4)
+ 438:	8d 3f       	cpi	r24, 0xFD	; 253
+ 43a:	2f ef       	ldi	r18, 0xFF	; 255
+ 43c:	92 07       	cpc	r25, r18
+ 43e:	1c f4       	brge	.+6      	; 0x446 <Joystick_get_x+0x2c>
+	{
+		xmapped = x + 4;
+ 440:	84 e0       	ldi	r24, 0x04	; 4
+ 442:	86 0f       	add	r24, r22
+ 444:	06 c0       	rjmp	.+12     	; 0x452 <Joystick_get_x+0x38>
+	}
+	else if (x >= 4)
+ 446:	04 97       	sbiw	r24, 0x04	; 4
+ 448:	1c f0       	brlt	.+6      	; 0x450 <Joystick_get_x+0x36>
+	{
+		xmapped = x - 4;
+ 44a:	8c ef       	ldi	r24, 0xFC	; 252
+ 44c:	86 0f       	add	r24, r22
+ 44e:	01 c0       	rjmp	.+2      	; 0x452 <Joystick_get_x+0x38>
+{
+	
+	int16_t x = (datacopy[1] << 8) + datacopy[0];
+	x -= 512;
+	x /= 30;
+	int8_t xmapped = 0;
+ 450:	80 e0       	ldi	r24, 0x00	; 0
+	}
+	else if (x >= 4)
+	{
+		xmapped = x - 4;
+	}
+	return clamp(xmapped,-10,10);
+ 452:	86 3f       	cpi	r24, 0xF6	; 246
+ 454:	0c f4       	brge	.+2      	; 0x458 <Joystick_get_x+0x3e>
+ 456:	86 ef       	ldi	r24, 0xF6	; 246
+ 458:	8b 30       	cpi	r24, 0x0B	; 11
+ 45a:	0c f0       	brlt	.+2      	; 0x45e <Joystick_get_x+0x44>
+ 45c:	8a e0       	ldi	r24, 0x0A	; 10
+}
+ 45e:	08 95       	ret
+
+00000460 <Joystick_get_y>:
+
+
+int8_t Joystick_get_y()
+{
+	int16_t y = (datacopy[3] << 8) + datacopy[2];
+ 460:	ef e0       	ldi	r30, 0x0F	; 15
+ 462:	f2 e0       	ldi	r31, 0x02	; 2
+ 464:	83 81       	ldd	r24, Z+3	; 0x03
+ 466:	90 e0       	ldi	r25, 0x00	; 0
+ 468:	98 2f       	mov	r25, r24
+ 46a:	88 27       	eor	r24, r24
+ 46c:	22 81       	ldd	r18, Z+2	; 0x02
+ 46e:	82 0f       	add	r24, r18
+ 470:	91 1d       	adc	r25, r1
+	y -= 512;
+ 472:	92 50       	subi	r25, 0x02	; 2
+	y /= 30;
+ 474:	6e e1       	ldi	r22, 0x1E	; 30
+ 476:	70 e0       	ldi	r23, 0x00	; 0
+ 478:	97 d0       	rcall	.+302    	; 0x5a8 <__divmodhi4>
+ 47a:	86 2f       	mov	r24, r22
+ 47c:	97 2f       	mov	r25, r23
+	int8_t ymapped = 0;
+	if (y <= -4)
+ 47e:	8d 3f       	cpi	r24, 0xFD	; 253
+ 480:	2f ef       	ldi	r18, 0xFF	; 255
+ 482:	92 07       	cpc	r25, r18
+ 484:	1c f4       	brge	.+6      	; 0x48c <Joystick_get_y+0x2c>
+	{
+		ymapped = y + 4;
+ 486:	84 e0       	ldi	r24, 0x04	; 4
+ 488:	86 0f       	add	r24, r22
+ 48a:	06 c0       	rjmp	.+12     	; 0x498 <Joystick_get_y+0x38>
+	}
+	else if (y >= 4)
+ 48c:	04 97       	sbiw	r24, 0x04	; 4
+ 48e:	1c f0       	brlt	.+6      	; 0x496 <Joystick_get_y+0x36>
+	{
+		ymapped = y - 4;
+ 490:	8c ef       	ldi	r24, 0xFC	; 252
+ 492:	86 0f       	add	r24, r22
+ 494:	01 c0       	rjmp	.+2      	; 0x498 <Joystick_get_y+0x38>
+int8_t Joystick_get_y()
+{
+	int16_t y = (datacopy[3] << 8) + datacopy[2];
+	y -= 512;
+	y /= 30;
+	int8_t ymapped = 0;
+ 496:	80 e0       	ldi	r24, 0x00	; 0
+	}
+	else if (y >= 4)
+	{
+		ymapped = y - 4;
+	}
+	return clamp(ymapped,-10,10);
+ 498:	86 3f       	cpi	r24, 0xF6	; 246
+ 49a:	0c f4       	brge	.+2      	; 0x49e <Joystick_get_y+0x3e>
+ 49c:	86 ef       	ldi	r24, 0xF6	; 246
+ 49e:	8b 30       	cpi	r24, 0x0B	; 11
+ 4a0:	0c f0       	brlt	.+2      	; 0x4a4 <Joystick_get_y+0x44>
+ 4a2:	8a e0       	ldi	r24, 0x0A	; 10
+ 4a4:	08 95       	ret
+
+000004a6 <Led_Init>:
+RESULT Led_SetBit(uint8_t bit, uint8_t val)
+{
+	if(!ledIsInit) return R_M_NOT_INIT;
+	PORTJ =  SetBit(PORTJ,bit,val);
+	return R_OK;
+}
+ 4a6:	80 91 0e 02 	lds	r24, 0x020E
+ 4aa:	81 11       	cpse	r24, r1
+ 4ac:	08 c0       	rjmp	.+16     	; 0x4be <Led_Init+0x18>
+ 4ae:	8f ef       	ldi	r24, 0xFF	; 255
+ 4b0:	80 93 04 01 	sts	0x0104, r24
+ 4b4:	10 92 05 01 	sts	0x0105, r1
+ 4b8:	81 e0       	ldi	r24, 0x01	; 1
+ 4ba:	80 93 0e 02 	sts	0x020E, r24
+ 4be:	08 95       	ret
+
+000004c0 <DLed_Init>:
+ 4c0:	8f ef       	ldi	r24, 0xFF	; 255
+ 4c2:	80 93 01 01 	sts	0x0101, r24
+ 4c6:	10 92 02 01 	sts	0x0102, r1
+ 4ca:	08 95       	ret
+
+000004cc <DLed_Set>:
+ 4cc:	80 93 02 01 	sts	0x0102, r24
+ 4d0:	08 95       	ret
+
+000004d2 <Led_ShiftLeft>:
+RESULT Led_ShiftLeft()
+{
+	if(!ledIsInit) return R_M_NOT_INIT;
+ 4d2:	80 91 0e 02 	lds	r24, 0x020E
+ 4d6:	88 23       	and	r24, r24
+ 4d8:	61 f0       	breq	.+24     	; 0x4f2 <Led_ShiftLeft+0x20>
+	PORTJ = PORTJ << 1 | PORTJ >> 7;
+ 4da:	e5 e0       	ldi	r30, 0x05	; 5
+ 4dc:	f1 e0       	ldi	r31, 0x01	; 1
+ 4de:	90 81       	ld	r25, Z
+ 4e0:	80 81       	ld	r24, Z
+ 4e2:	99 0f       	add	r25, r25
+ 4e4:	88 1f       	adc	r24, r24
+ 4e6:	88 27       	eor	r24, r24
+ 4e8:	88 1f       	adc	r24, r24
+ 4ea:	89 2b       	or	r24, r25
+ 4ec:	80 83       	st	Z, r24
+	return R_OK;
+ 4ee:	80 e0       	ldi	r24, 0x00	; 0
+ 4f0:	08 95       	ret
+	PORTJ =  SetBit(PORTJ,bit,val);
+	return R_OK;
+}
+RESULT Led_ShiftLeft()
+{
+	if(!ledIsInit) return R_M_NOT_INIT;
+ 4f2:	81 e0       	ldi	r24, 0x01	; 1
+	PORTJ = PORTJ << 1 | PORTJ >> 7;
+	return R_OK;
+}
+ 4f4:	08 95       	ret
+
+000004f6 <Led_ShiftRight>:
+
+RESULT Led_ShiftRight()
+{
+	if(!ledIsInit) return R_M_NOT_INIT;
+ 4f6:	80 91 0e 02 	lds	r24, 0x020E
+ 4fa:	88 23       	and	r24, r24
+ 4fc:	71 f0       	breq	.+28     	; 0x51a <Led_ShiftRight+0x24>
+	PORTJ = PORTJ << 7 | PORTJ >> 1;
+ 4fe:	e5 e0       	ldi	r30, 0x05	; 5
+ 500:	f1 e0       	ldi	r31, 0x01	; 1
+ 502:	90 81       	ld	r25, Z
+ 504:	20 81       	ld	r18, Z
+ 506:	30 e8       	ldi	r19, 0x80	; 128
+ 508:	93 9f       	mul	r25, r19
+ 50a:	c0 01       	movw	r24, r0
+ 50c:	11 24       	eor	r1, r1
+ 50e:	92 2f       	mov	r25, r18
+ 510:	96 95       	lsr	r25
+ 512:	89 2b       	or	r24, r25
+ 514:	80 83       	st	Z, r24
+	return R_OK;
+ 516:	80 e0       	ldi	r24, 0x00	; 0
+ 518:	08 95       	ret
+	return R_OK;
+}
+
+RESULT Led_ShiftRight()
+{
+	if(!ledIsInit) return R_M_NOT_INIT;
+ 51a:	81 e0       	ldi	r24, 0x01	; 1
+	PORTJ = PORTJ << 7 | PORTJ >> 1;
+	return R_OK;
+}
+ 51c:	08 95       	ret
+
+0000051e <Led_Set>:
+RESULT Led_Set(uint8_t val)
+{
+	if(!ledIsInit) return R_M_NOT_INIT;
+ 51e:	90 91 0e 02 	lds	r25, 0x020E
+ 522:	99 23       	and	r25, r25
+ 524:	21 f0       	breq	.+8      	; 0x52e <Led_Set+0x10>
+	PORTJ = val;
+ 526:	80 93 05 01 	sts	0x0105, r24
+	return R_OK;
+ 52a:	80 e0       	ldi	r24, 0x00	; 0
+ 52c:	08 95       	ret
+	PORTJ = PORTJ << 7 | PORTJ >> 1;
+	return R_OK;
+}
+RESULT Led_Set(uint8_t val)
+{
+	if(!ledIsInit) return R_M_NOT_INIT;
+ 52e:	81 e0       	ldi	r24, 0x01	; 1
+	PORTJ = val;
+	return R_OK;
+}
+ 530:	08 95       	ret
+
+00000532 <main>:
+#include "Ctrl.h"
+#include "Joystick.h"
+
+int main(void)
+{
+	Led_Init();
+ 532:	b9 df       	rcall	.-142    	; 0x4a6 <Led_Init>
+	DLed_Init();
+ 534:	c5 df       	rcall	.-118    	; 0x4c0 <DLed_Init>
+	Ctrl_init();
+ 536:	49 de       	rcall	.-878    	; 0x1ca <Ctrl_init>
+	Joystick_init();
+ 538:	12 df       	rcall	.-476    	; 0x35e <Joystick_init>
+	while(1)
+	{
+		DLed_Set(0);
+		Led_Set(0xAA);
+		uint16_t timer = 0;
+		 while(!Ctrl_connect())
+ 53a:	d1 2c       	mov	r13, r1
+ 53c:	e1 2c       	mov	r14, r1
+	Ctrl_init();
+	Joystick_init();
+	
+	while(1)
+	{
+		DLed_Set(0);
+ 53e:	80 e0       	ldi	r24, 0x00	; 0
+ 540:	c5 df       	rcall	.-118    	; 0x4cc <DLed_Set>
+		Led_Set(0xAA);
+ 542:	8a ea       	ldi	r24, 0xAA	; 170
+ 544:	ec df       	rcall	.-40     	; 0x51e <Led_Set>
+		uint16_t timer = 0;
+		 while(!Ctrl_connect())
+ 546:	cd 2d       	mov	r28, r13
+ 548:	de 2d       	mov	r29, r14
+ 54a:	04 c0       	rjmp	.+8      	; 0x554 <main+0x22>
+		 {
+			 // wait
+			 if(!(timer++))
+ 54c:	20 97       	sbiw	r28, 0x00	; 0
+ 54e:	09 f4       	brne	.+2      	; 0x552 <main+0x20>
+				Led_ShiftLeft();
+ 550:	c0 df       	rcall	.-128    	; 0x4d2 <Led_ShiftLeft>
+ 552:	21 96       	adiw	r28, 0x01	; 1
+	while(1)
+	{
+		DLed_Set(0);
+		Led_Set(0xAA);
+		uint16_t timer = 0;
+		 while(!Ctrl_connect())
+ 554:	3f de       	rcall	.-898    	; 0x1d4 <Ctrl_connect>
+ 556:	88 23       	and	r24, r24
+ 558:	c9 f3       	breq	.-14     	; 0x54c <main+0x1a>
+		 {
+			 // wait
+			 if(!(timer++))
+				Led_ShiftLeft();
+		 }
+		 Led_Set(0x0F);
+ 55a:	8f e0       	ldi	r24, 0x0F	; 15
+ 55c:	e0 df       	rcall	.-64     	; 0x51e <Led_Set>
+		 RESULT res = R_OK;
+		 while(Ctrl_isConnected())
+ 55e:	20 c0       	rjmp	.+64     	; 0x5a0 <main+0x6e>
+		 {
+			res = Ctrl_Update();
+ 560:	7c de       	rcall	.-776    	; 0x25a <Ctrl_Update>
+			if(FAILED(res))
+ 562:	81 11       	cpse	r24, r1
+				DLed_Set(res);
+ 564:	b3 df       	rcall	.-154    	; 0x4cc <DLed_Set>
+		 
+			while( Joystick_step() == R_BUFF_NOT_READY);
+ 566:	09 df       	rcall	.-494    	; 0x37a <Joystick_step>
+ 568:	83 30       	cpi	r24, 0x03	; 3
+ 56a:	e9 f3       	breq	.-6      	; 0x566 <main+0x34>
+		 
+			int8_t x = Joystick_get_x();
+ 56c:	56 df       	rcall	.-340    	; 0x41a <Joystick_get_x>
+ 56e:	08 2f       	mov	r16, r24
+			int8_t y = Joystick_get_y();
+ 570:	77 df       	rcall	.-274    	; 0x460 <Joystick_get_y>
+ 572:	18 2f       	mov	r17, r24
+			BOOL pb = Joystick_get_b2();
+ 574:	4c df       	rcall	.-360    	; 0x40e <Joystick_get_b2>
+ 576:	f8 2e       	mov	r15, r24
+			BOOL boost = Joystick_get_b1();
+ 578:	45 df       	rcall	.-374    	; 0x404 <Joystick_get_b1>
+			
+			Ctrl_UpdateData(y,x,pb,boost);
+ 57a:	28 2f       	mov	r18, r24
+ 57c:	4f 2d       	mov	r20, r15
+ 57e:	60 2f       	mov	r22, r16
+ 580:	81 2f       	mov	r24, r17
+ 582:	b3 de       	rcall	.-666    	; 0x2ea <Ctrl_UpdateData>
+			
+			timer++;
+ 584:	21 96       	adiw	r28, 0x01	; 1
+			if(Ctrl_GetBoostFactor() == 2)
+ 586:	23 de       	rcall	.-954    	; 0x1ce <Ctrl_GetBoostFactor>
+ 588:	82 30       	cpi	r24, 0x02	; 2
+ 58a:	39 f4       	brne	.+14     	; 0x59a <main+0x68>
+			{
+				if((timer % 128) == 0)
+ 58c:	ce 01       	movw	r24, r28
+ 58e:	8f 77       	andi	r24, 0x7F	; 127
+ 590:	99 27       	eor	r25, r25
+ 592:	89 2b       	or	r24, r25
+ 594:	29 f4       	brne	.+10     	; 0x5a0 <main+0x6e>
+				{
+					Led_ShiftRight();
+ 596:	af df       	rcall	.-162    	; 0x4f6 <Led_ShiftRight>
+ 598:	03 c0       	rjmp	.+6      	; 0x5a0 <main+0x6e>
+				}
+			}
+			else
+			{
+				if((timer % 256) == 0)
+ 59a:	c1 11       	cpse	r28, r1
+ 59c:	01 c0       	rjmp	.+2      	; 0x5a0 <main+0x6e>
+					Led_ShiftLeft();	
+ 59e:	99 df       	rcall	.-206    	; 0x4d2 <Led_ShiftLeft>
+			 if(!(timer++))
+				Led_ShiftLeft();
+		 }
+		 Led_Set(0x0F);
+		 RESULT res = R_OK;
+		 while(Ctrl_isConnected())
+ 5a0:	59 de       	rcall	.-846    	; 0x254 <Ctrl_isConnected>
+ 5a2:	81 11       	cpse	r24, r1
+ 5a4:	dd cf       	rjmp	.-70     	; 0x560 <main+0x2e>
+ 5a6:	cb cf       	rjmp	.-106    	; 0x53e <main+0xc>
+
+000005a8 <__divmodhi4>:
+ 5a8:	97 fb       	bst	r25, 7
+ 5aa:	07 2e       	mov	r0, r23
+ 5ac:	16 f4       	brtc	.+4      	; 0x5b2 <__divmodhi4+0xa>
+ 5ae:	00 94       	com	r0
+ 5b0:	06 d0       	rcall	.+12     	; 0x5be <__divmodhi4_neg1>
+ 5b2:	77 fd       	sbrc	r23, 7
+ 5b4:	08 d0       	rcall	.+16     	; 0x5c6 <__divmodhi4_neg2>
+ 5b6:	0b d0       	rcall	.+22     	; 0x5ce <__udivmodhi4>
+ 5b8:	07 fc       	sbrc	r0, 7
+ 5ba:	05 d0       	rcall	.+10     	; 0x5c6 <__divmodhi4_neg2>
+ 5bc:	3e f4       	brtc	.+14     	; 0x5cc <__divmodhi4_exit>
+
+000005be <__divmodhi4_neg1>:
+ 5be:	90 95       	com	r25
+ 5c0:	81 95       	neg	r24
+ 5c2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 5c4:	08 95       	ret
+
+000005c6 <__divmodhi4_neg2>:
+ 5c6:	70 95       	com	r23
+ 5c8:	61 95       	neg	r22
+ 5ca:	7f 4f       	sbci	r23, 0xFF	; 255
+
+000005cc <__divmodhi4_exit>:
+ 5cc:	08 95       	ret
+
+000005ce <__udivmodhi4>:
+ 5ce:	aa 1b       	sub	r26, r26
+ 5d0:	bb 1b       	sub	r27, r27
+ 5d2:	51 e1       	ldi	r21, 0x11	; 17
+ 5d4:	07 c0       	rjmp	.+14     	; 0x5e4 <__udivmodhi4_ep>
+
+000005d6 <__udivmodhi4_loop>:
+ 5d6:	aa 1f       	adc	r26, r26
+ 5d8:	bb 1f       	adc	r27, r27
+ 5da:	a6 17       	cp	r26, r22
+ 5dc:	b7 07       	cpc	r27, r23
+ 5de:	10 f0       	brcs	.+4      	; 0x5e4 <__udivmodhi4_ep>
+ 5e0:	a6 1b       	sub	r26, r22
+ 5e2:	b7 0b       	sbc	r27, r23
+
+000005e4 <__udivmodhi4_ep>:
+ 5e4:	88 1f       	adc	r24, r24
+ 5e6:	99 1f       	adc	r25, r25
+ 5e8:	5a 95       	dec	r21
+ 5ea:	a9 f7       	brne	.-22     	; 0x5d6 <__udivmodhi4_loop>
+ 5ec:	80 95       	com	r24
+ 5ee:	90 95       	com	r25
+ 5f0:	bc 01       	movw	r22, r24
+ 5f2:	cd 01       	movw	r24, r26
+ 5f4:	08 95       	ret
+
+000005f6 <_exit>:
+ 5f6:	f8 94       	cli
+
+000005f8 <__stop_program>:
+ 5f8:	ff cf       	rjmp	.-2      	; 0x5f8 <__stop_program>
